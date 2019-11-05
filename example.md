@@ -34,13 +34,13 @@ You need
 Write a markdown file. And then execute
 
 ```
-pandoc example.md -o example.html \\
-       -t revealjs \\
-       --katex=./katex/  \\
-       --standalone \\
-       -V theme=beamer \\
-       -V transition=none  \\
-       -i --slide-level 2 \\
+pandoc example.md -o example.html \
+       -t revealjs \
+       --katex=./katex/  \
+       --standalone \
+       -V theme=beamer \
+       -V transition=none  \
+       -i --slide-level 2 \
        --self-contained
 ```
 
@@ -157,6 +157,37 @@ will be seen as
 
 The ring of polynomials over a field is noetherian.
 :::
+
+## Images
+
+You can embed images in two ways. One is using markdown syntax:
+
+``` markdown
+![](fibramilnor.png)
+```
+
+![](fibramilnor.png)
+
+
+## Images
+
+You can embed images in two ways. The second one is using html syntax:
+
+``` markdown
+<img data-src="fibramilnor.png" />
+```
+
+<img data-src="fibramilnor.png" />
+
+## Videos
+
+Videos can be embedded using html syntax:
+
+```markdown
+<video data-autoplay src="fibramilnor.mp4"/>
+```
+<video data-autoplay src="fibramilnor.mp4"/>
+
 
 # Pandoc options
 

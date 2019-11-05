@@ -136,6 +136,10 @@ display: list-item;
 .reveal video {
     margin-top: 30px;
     max-height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 30px;
 }
 
 .reveal.overview {
