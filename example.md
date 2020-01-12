@@ -184,9 +184,10 @@ You can embed images in two ways. The second one is using html syntax:
 Videos can be embedded using html syntax:
 
 ```markdown
-<video data-autoplay src="fibramilnor.mp4"/>
+<video data-autoplay src="fibramilnor.webm"/>
 ```
-<video data-autoplay src="fibramilnor.mp4"/>
+
+<video data-autoplay src="fibramilnor.webm"/>
 
 
 # Pandoc options
