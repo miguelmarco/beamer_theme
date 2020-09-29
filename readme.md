@@ -44,5 +44,5 @@ If you have an older file and want to adapt it to the new versions, you can do s
 
 
 ```
-sed  -i '1h;1!H;${;g;s/::: thm\n\#\# /::: thm\n<!-- -->\n### /g;p;}' filename.md
+perl -0777 -i.original -pe 's/::: thm\n\#\# /::: thm\n <!-- -->\n### /igs'
 ```
