@@ -144,7 +144,8 @@ The code
 
 ``` markdown
 ::: thm
-## **Theorem:**
+<!-- -->
+### **Theorem:**
 
 The ring of polynomials over a field is noetherian.
 :::
@@ -153,7 +154,8 @@ The ring of polynomials over a field is noetherian.
 will be seen as
 
 ::: thm
-## **Theorem:**
+<!-- -->
+### **Theorem:**
 
 The ring of polynomials over a field is noetherian.
 :::

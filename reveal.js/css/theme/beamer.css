@@ -157,7 +157,7 @@ left: 0%;
     box-shadow: 5px 5px 10px grey;
 }
 
-.reveal div.thm h2 {
+.reveal div.thm h3 {
     padding-top: 1%;
     padding-bottom: 1%;
     padding-right: 1%;
@@ -168,6 +168,9 @@ left: 0%;
     margin-bottom: 0;
     border-radius: 15px 15px 0px 0px;
     font-size: 1.9em;
+    background: #3333b3;
+    color: white;
+    text-align: left;
 }
 
 .reveal div.thm p {

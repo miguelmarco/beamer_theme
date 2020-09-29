@@ -34,3 +34,15 @@ The parameters are the following:
 - `-i` This tells reveal to show the list items one by one. If you prefear to show them all at once, you can skip this parameter.
 - `--slide-level 2` Tells revealjs that new slides are created with `##` (This way you can use `#` for slides with a big centered title for new sections).
 - `--self-contained` Tells pandoc to embed all the needed data (javascript, style, images and videos) in a single html file. Without it, you would get a smaller file, but it would need the rest of the files to render correctly.
+
+
+## Update warning
+
+Changes have been introduced to make the theorem styling compatible with versions of pandoc higher than 2.8.
+
+If you have an older file and want to adapt it to the new versions, you can do so with this order:
+
+
+```
+sed  -i '1h;1!H;${;g;s/::: thm\n\#\# /::: thm\n<!-- -->\n### /g;p;}' filename.md
+```
