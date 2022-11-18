@@ -4,7 +4,7 @@ You can make slides that look (moreless) like beamer, but as html files, so they
 
 Besides, by using markdown as a source, you can use a more efficient workflow.
 
-Here you have a `beamer.css` file that tries to look similar to a beamer presentation. If you copy it to your `/reveal.js/css/theme/` directory, you can use it in your reveal slides.
+Here you have a `beamer.css` file that tries to look similar to a beamer presentation. If you copy it to your `/reveal.js/dist/theme/` directory (see below), you can use it in your reveal slides.
 
 
 Look at `example.md` to see how to create the corresponding markdown file.
@@ -46,3 +46,7 @@ If you have an older file and want to adapt it to the new versions, you can do s
 ```
 perl -0777 -i.original -pe 's/::: thm\n\#\# /::: thm\n<!-- -->\n### /igs'
 ```
+
+## Installing
+
+All you need is to have [katex](https://github.com/KaTeX/KaTeX/releases/) (included in this repo) and [reveal.js] (included as a git submodule, can fetch init with `git submodule init` and `git submodule update`) in your directory, and copy or link the file `beamer.css` to `/reveal.js/dist/theme`.
