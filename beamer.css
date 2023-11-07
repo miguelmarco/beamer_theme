@@ -204,7 +204,7 @@ left: 0%;
 
 }
 
-.reveal pre code {
+.reveal pre code.sourceCode {
     display: block;
     padding: .25em;
     overflow: auto;
